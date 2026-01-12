@@ -1,13 +1,15 @@
-# L-nux-Pandocui
+# Linux-Pandocui
 
 <div align="center">
 
 # 🐧 Linux Pandoc Dönüştürücü Projesi  
-### GUI (YAD) & TUI (Whiptail)
+### GUI (YAD) & TUI (Whiptail) Tabanlı Belge Dönüştürme Aracı
 
-Linux ortamında **Pandoc** kullanarak  
-Markdown / HTML / PDF / DOCX format dönüşümü yapan  
-GUI ve TUI destekli Bash projesi.
+Linux işletim sistemi üzerinde çalışan,  
+**Pandoc** kullanarak belge formatlarını dönüştürmeyi amaçlayan  
+**GUI (grafik arayüz)** ve **TUI (terminal arayüzü)** destekli Bash projesi.
+
+Markdown • HTML • PDF • DOCX
 
 ![Banner](assets/banner.png)
 <!-- GÖRSEL: proje kapak görseli -->
@@ -16,34 +18,125 @@ GUI ve TUI destekli Bash projesi.
 
 ---
 
-## 🎯 Proje Amacı
+## 📌 Proje Tanımı
 
-Bu projenin amacı, Linux kullanıcılarının **komut yazmadan**
-Pandoc ile belge dönüştürmesini sağlamaktır.
+Bu proje, Pandoc’un sunduğu güçlü belge dönüştürme yeteneklerini  
+Linux kullanıcıları için **daha erişilebilir ve kullanıcı dostu** hale getirmeyi amaçlamaktadır.
 
-- Grafik arayüz (GUI)
-- Terminal tabanlı arayüz (TUI)
-- Bash Script temelli
-- Hafif ve sade yapı
+Komut satırı bilgisi sınırlı olan kullanıcılar için **GUI**,  
+terminal ortamını tercih eden kullanıcılar için ise **TUI** arayüzü sunulmuştur.
+
+Proje tamamen **Bash Script** ile geliştirilmiş olup  
+harici bir programlama dili veya framework kullanılmamıştır.
+
+---
+
+## 🎯 Projenin Amacı
+
+- Pandoc kullanımını kolaylaştırmak
+- Komut yazma zorunluluğunu ortadan kaldırmak
+- GUI ve TUI farkını uygulamalı olarak göstermek
+- Linux ortamında script tabanlı arayüz geliştirmeyi öğrenmek
+- Eğitim amaçlı, sade ve anlaşılır bir proje sunmak
+
+---
+
+## ✨ Temel Özellikler
+
+- GUI (YAD) ile fare destekli kullanım
+- TUI (Whiptail) ile terminal menüleri
+- Girdi dosyası seçimi
+- Çıktı formatı belirleme
+- Çıktı dosya yolu seçimi
+- Pandoc komut önizleme
+- Hata kontrolü ve kullanıcı bilgilendirmesi
 
 ---
 
 ## 🛠️ Kullanılan Teknolojiler
 
-- Bash (Shell Script)
-- Pandoc
-- YAD (GUI)
-- Whiptail (TUI)
+- **Bash (Shell Script)**  
+- **Pandoc**  
+- **YAD** – Grafik kullanıcı arayüzü  
+- **Whiptail** – Terminal tabanlı arayüz  
 
 ---
 
 ## 📁 Proje Dosya Yapısı
 
+Projeyi Çalıştırma
+
 ```text
-.
-├── run.sh
-├── gui.sh
-├── tui.sh
-├── test.md
-├── cikti.html
-└── README.md
+pandoc-ui
+├── run.sh        # Ana çalıştırma dosyası
+├── gui.sh        # YAD tabanlı grafik arayüz
+├── tui.sh        # Whiptail tabanlı terminal arayüzü
+├── test.md       # Örnek girdi dosyası
+├── cikti.html    # Örnek çıktı dosyası
+    README.md     # Proje dokümantasyonu
+    img folder    #Projeden alınan ekran görüntüleri(resimler)
+```
+
+## Projeyi Çalıştırma
+
+Öncelikle script dosyalarına çalıştırma izni verilir:
+chmod +x run.sh gui.sh tui.sh
+Ardından ana dosya çalıştırılır:
+./run.sh
+
+## Arayüz Seçim Mekanizması
+
+Program çalıştığında kullanıcıdan arayüz seçmesi istenir:
+
+-GUI (YAD)
+-TUI (Whiptail)
+<!-- GÖRSEL: arayüz seçim ekranı -->
+
+## 🖥️ GUI (YAD) Arayüzü
+
+### Girdi Dosyası Seçimi
+![GUI Dosya Seçimi](assets/screenshots/gui/01-file-select.png)
+
+### Çıktı Formatı Seçimi
+![GUI Format](assets/screenshots/gui/02-format-select.png)
+
+### Çıktı Dosya Yolu
+![GUI Output](assets/screenshots/gui/03-output-path.png)
+
+### Komut Önizleme
+![GUI Preview](assets/screenshots/gui/04-preview.png)
+
+### Başarılı İşlem
+![GUI Success](assets/screenshots/gui/05-success.png)
+
+
+## ⌨️ TUI (Whiptail) Arayüzü
+
+### Dosya Yolu Girişi
+![TUI Input](assets/screenshots/tui/01-input.png)
+
+### Format Seçim Menüsü
+![TUI Format](assets/screenshots/tui/02-format-menu.png)
+
+### Komut Önizleme
+![TUI Preview](assets/screenshots/tui/03-preview.png)
+
+### İşlem Tamamlandı
+![TUI Success](assets/screenshots/tui/04-success.png)
+
+
+🎥 Tanıtım Videosu
+
+YouTube Linki:
+
+<!-- BURAYA VİDEO LİNKİ -->
+
+## Geliştirici Bilgileri
+
+İsim: Yunus Emre Nallı
+Email: yunusemrenalli@hotmail.com
+
+
+
+
+
