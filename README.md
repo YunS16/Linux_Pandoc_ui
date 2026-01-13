@@ -88,41 +88,39 @@ Ardından ana dosya çalıştırılır:
 
 Program çalıştığında kullanıcıdan arayüz seçmesi istenir:
 
--GUI (YAD)
--TUI (Whiptail)
-<!-- GÖRSEL: arayüz seçim ekranı -->
+- GUI (YAD)
+- TUI (Whiptail)
+![arayüz_secim](img/Arayuz_secim.png)
 
 ## 🖥️ GUI (YAD) Arayüzü
 
 ### Girdi Dosyası Seçimi
-![GUI Dosya Seçimi](assets/screenshots/gui/01-file-select.png)
+![GUI Dosya Seçimi](img/gui/Gui_girdi_dosyasi.png)
 
 ### Çıktı Formatı Seçimi
-![GUI Format](assets/screenshots/gui/02-format-select.png)
+![GUI Format](img/gui/cikti_formati.png)
 
 ### Çıktı Dosya Yolu
-![GUI Output](assets/screenshots/gui/03-output-path.png)
+![GUI Output](img/gui/cikti_dosya_yolu.png)
 
-### Komut Önizleme
-![GUI Preview](assets/screenshots/gui/04-preview.png)
 
 ### Başarılı İşlem
-![GUI Success](assets/screenshots/gui/05-success.png)
+![GUI Success](img/gui/basarili_cikti.png)
 
 
 ## ⌨️ TUI (Whiptail) Arayüzü
 
 ### Dosya Yolu Girişi
-![TUI Input](assets/screenshots/tui/01-input.png)
+![TUI Input](img/tui/girid_yolu_2.png)
 
 ### Format Seçim Menüsü
-![TUI Format](assets/screenshots/tui/02-format-menu.png)
+![TUI Format](img/tui/cikti_formati.png)
 
-### Komut Önizleme
-![TUI Preview](assets/screenshots/tui/03-preview.png)
+### Cikti Yolu 
+![TUI Preview](img/tui/cikti_yolu.png)
 
 ### İşlem Tamamlandı
-![TUI Success](assets/screenshots/tui/04-success.png)
+![TUI Success](img/tui/basarili_cikti1.png)
 
 
 🎥 Tanıtım Videosu
