@@ -88,12 +88,12 @@ VirtualBox üzerinde Pardus kurulumunu gerçekleştirebilir.
 
 Bu bölümde projeyi GitHub üzerinden indirip terminalden çalıştırma adımları gösterilmektedir.
 
-### 1) Git ile projeyi klonla
+### 1️⃣ Git ile projeyi klonla
 
 ```bash
 git clone https://github.com/YunS16/Linux_Pandoc_ui.git
 ```
-###2️⃣ Proje dizinine girin
+### 2️⃣ Proje dizinine girin
 ```
 cd Linux_Pandoc_ui
 ```
@@ -107,11 +107,11 @@ LaTeX ise PDF çıktısı oluşturabilmek için kullanılmaktadır.
 sudo apt update
 sudo apt install -y pandoc yad whiptail texlive
 ```
-###4️⃣Script dosyalarına çalıştırma izni verin
+### 4️⃣Script dosyalarına çalıştırma izni verin
 ```
 chmod +x run.sh gui.sh tui.sh
 ```
-###5️⃣ Programı çalıştırın
+### 5️⃣ Programı çalıştırın
 ```
 ./run.sh
 ```
@@ -182,11 +182,10 @@ Kullanıcı yön tuşlarıyla menüde rahatça gezinebilir.
 
 
 
-🎥 Tanıtım Videosu
+## 🎥 Tanıtım Videosu
 
 YouTube Linki:
 
-<!-- BURAYA VİDEO LİNKİ -->
 
 ## Geliştirici Bilgileri
 
