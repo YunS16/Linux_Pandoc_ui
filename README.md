@@ -64,8 +64,6 @@ harici bir programlama dili veya framework kullanılmamıştır.
 
 ## 📁 Proje Dosya Yapısı
 
-Projeyi Çalıştırma
-
 ```text
 pandoc-ui
 ├── run.sh        # Ana çalıştırma dosyası
@@ -77,19 +75,53 @@ pandoc-ui
     img folder    #Projeden alınan ekran görüntüleri(resimler)
 ```
 
-## Projeyi Çalıştırma
+## Pardus İşletim Sistemi Kurulumu
 
-Öncelikle script dosyalarına çalıştırma izni verilir:
+Bu proje Pardus işletim sistemi üzerinde geliştirilmiş ve test edilmiştir.
+Pardus kullanmayan kullanıcılar, aşağıdaki bağlantılar aracılığıyla
+VirtualBox üzerinde Pardus kurulumunu gerçekleştirebilir.
+
+- [VirtualBox Kurulumu](https://www.virtualbox.org/wiki/Downloads)
+- [Pardus ISO Dosyası](https://www.pardus.org.tr/indir/)
+
+## 🧩 Proje Kurulumu ve Çalıştırma (Terminal Üzerinden)
+
+Bu bölümde projeyi GitHub üzerinden indirip terminalden çalıştırma adımları gösterilmektedir.
+
+### 1) Git ile projeyi klonla
+
+```bash
+git clone https://github.com/YunS16/Linux_Pandoc_ui.git
+```
+###2️⃣ Proje dizinine girin
+```
+cd Linux_Pandoc_ui
+```
+### 3️⃣ Gerekli paketleri kurun (Debian / Pardus / Ubuntu)
+
+Bu adımda projenin çalışabilmesi için gerekli olan tüm paketler sisteme kurulmaktadır.
+Pandoc belge dönüştürme işlemleri için, YAD ve Whiptail arayüzler için,
+LaTeX ise PDF çıktısı oluşturabilmek için kullanılmaktadır.
+
+```bash
+sudo apt update
+sudo apt install -y pandoc yad whiptail texlive
+```
+###4️⃣Script dosyalarına çalıştırma izni verin
+```
 chmod +x run.sh gui.sh tui.sh
-Ardından ana dosya çalıştırılır:
+```
+###5️⃣ Programı çalıştırın
+```
 ./run.sh
-
+```
 ## Arayüz Seçim Mekanizması
 
 Program çalıştığında kullanıcıdan arayüz seçmesi istenir:
 
 - GUI (YAD)
 - TUI (Whiptail)
+- 
 ![arayüz_secim](img/Arayuz_secim.png)
 
 ## 🖥️ GUI (YAD) Arayüzü
@@ -97,30 +129,57 @@ Program çalıştığında kullanıcıdan arayüz seçmesi istenir:
 ### Girdi Dosyası Seçimi
 ![GUI Dosya Seçimi](img/gui/Gui_girdi_dosyasi.png)
 
+Bu adımda kullanıcı dönüştürülmek istenen belgeyi grafik arayüz üzerinden seçer.
+Dosya seçimi tamamlandıktan sonra bir sonraki aşamaya geçilir.
+
+
 ### Çıktı Formatı Seçimi
 ![GUI Format](img/gui/cikti_formati.png)
+
+Kullanıcı burada belgenin hangi formata dönüştürüleceğini belirler.
+HTML, PDF ve DOCX gibi farklı formatlar desteklenmektedir.
+
 
 ### Çıktı Dosya Yolu
 ![GUI Output](img/gui/cikti_dosya_yolu.png)
 
+Dönüştürülen dosyanın hangi dizine kaydedileceği bu adımda seçilir.
+Böylece çıktı dosyası kullanıcı tarafından kolayca bulunabilir.
 
-### Başarılı İşlem
+
+### İşlem sonucu 
 ![GUI Success](img/gui/basarili_cikti.png)
+
+Dönüştürme işlemi başarıyla tamamlandığında kullanıcı bilgilendirilir.
+Oluşturulan çıktı dosyası seçilen dizine kaydedilir.
+![GUI Success](img/gui/basarili_cikti_kanit.png)
 
 
 ## ⌨️ TUI (Whiptail) Arayüzü
 
 ### Dosya Yolu Girişi
-![TUI Input](img/tui/girid_yolu_2.png)
+![TUI Input](img/tui/girdi_yolu_2.png)
+
+Kullanıcı dönüştürülecek dosyanın tam yolunu terminal üzerinden girer.
+Bu yöntem grafik arayüz bulunmayan sistemlerde kullanım sağlar.
 
 ### Format Seçim Menüsü
 ![TUI Format](img/tui/cikti_formati.png)
+
+Terminal tabanlı menü aracılığıyla çıktı formatı seçilir.
+Kullanıcı yön tuşlarıyla menüde rahatça gezinebilir.
 
 ### Cikti Yolu 
 ![TUI Preview](img/tui/cikti_yolu.png)
 
 ### İşlem Tamamlandı
 ![TUI Success](img/tui/basarili_cikti1.png)
+
+İşlem başarıyla tamamlandığında terminal üzerinden bilgilendirme yapılır.
+Çıktı dosyası belirtilen dizinde oluşturulur.
+
+![TUI Success](img/tui/basarili_cikti2.png)
+
 
 
 🎥 Tanıtım Videosu
