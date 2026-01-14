@@ -147,12 +147,15 @@ Dönüştürülen dosyanın hangi dizine kaydedileceği bu adımda seçilir.
 Böylece çıktı dosyası kullanıcı tarafından kolayca bulunabilir.
 
 
-### İşlem sonucu 
-![GUI Success](img/gui/basarili_cikti.png)
+### İşlem Sonucu
+
+<div style="display:flex; gap:20px; justify-content:center; align-items:center;">
+  <img src="img/gui/basarili_cikti.png" width="45%">
+  <img src="img/gui/basarili_cikti_kanit.png" width="45%">
+</div>
 
 Dönüştürme işlemi başarıyla tamamlandığında kullanıcı bilgilendirilir.
 Oluşturulan çıktı dosyası seçilen dizine kaydedilir.
-![GUI Success](img/gui/basarili_cikti_kanit.png)
 
 
 ## ⌨️ TUI (Whiptail) Arayüzü
@@ -172,13 +175,15 @@ Kullanıcı yön tuşlarıyla menüde rahatça gezinebilir.
 ### Cikti Yolu 
 ![TUI Preview](img/tui/cikti_yolu.png)
 
-### İşlem Tamamlandı
-![TUI Success](img/tui/basarili_cikti1.png)
+### İşlem Sonucu
+
+<div style="display:flex; gap:20px; justify-content:center; align-items:center;">
+  <img src="img/tui/basarili_cikti1.png" width="45%">
+  <img src="img/tui/basarili_cikti2.png" width="45%">
+</div>
 
 İşlem başarıyla tamamlandığında terminal üzerinden bilgilendirme yapılır.
 Çıktı dosyası belirtilen dizinde oluşturulur.
-
-![TUI Success](img/tui/basarili_cikti2.png)
 
 
 
