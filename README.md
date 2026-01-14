@@ -2,6 +2,8 @@
   <h1>🐧 Linux Pandoc Dönüştürücü Projesi</h1>
 </div>
 
+
+
 ## 📌 Proje Tanımı
 
 Bu proje, Pandoc’un sunduğu güçlü belge dönüştürme yeteneklerini  
@@ -112,7 +114,7 @@ Program çalıştığında kullanıcıdan arayüz seçmesi istenir:
 
 - GUI (YAD)
 - TUI (Whiptail)
-- 
+  
 ![arayüz_secim](img/Arayuz_secim.png)
 
 ## 🖥️ GUI (YAD) Arayüzü
@@ -185,8 +187,8 @@ YouTube Linki:
 
 ## Geliştirici Bilgileri
 
-İsim: Yunus Emre Nallı
-Email: yunusemrenalli@hotmail.com
+- İsim: Yunus Emre Nallı
+- Email: yunusemrenalli@hotmail.com
 
 
 
