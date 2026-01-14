@@ -182,7 +182,7 @@ Kullanıcı yön tuşlarıyla menüde rahatça gezinebilir.
 
 ## 🎥 Tanıtım Videosu
 
-YouTube Linki:
+YouTube Linki:  https://www.youtube.com/watch?v=4ByC1c7tpRc
 
 
 ## Geliştirici Bilgileri
