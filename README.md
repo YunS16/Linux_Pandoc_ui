@@ -1,20 +1,7 @@
 
 <div align="center">
-
 # 🐧 Linux Pandoc Dönüştürücü Projesi  
-### GUI (YAD) & TUI (Whiptail) Tabanlı Belge Dönüştürme Aracı
-
-Linux işletim sistemi üzerinde çalışan,  
-**Pandoc** kullanarak belge formatlarını dönüştürmeyi amaçlayan  
-**GUI (grafik arayüz)** ve **TUI (terminal arayüzü)** destekli Bash projesi.
-
-Markdown • HTML • PDF • DOCX
-
-![Banner](assets/banner.png)
-<!-- GÖRSEL: proje kapak görseli -->
-
 </div>
-
 ---
 
 ## 📌 Proje Tanımı
@@ -25,8 +12,15 @@ Linux kullanıcıları için **daha erişilebilir ve kullanıcı dostu** hale ge
 Komut satırı bilgisi sınırlı olan kullanıcılar için **GUI**,  
 terminal ortamını tercih eden kullanıcılar için ise **TUI** arayüzü sunulmuştur.
 
-Proje tamamen **Bash Script** ile geliştirilmiş olup  
-harici bir programlama dili veya framework kullanılmamıştır.
+Bu proje ile kullanıcılar, Pandoc aracılığıyla Markdown (`.md`) formatındaki belgeleri
+HTML (`.html`), PDF (`.pdf`) ve Word (`.docx`) formatlarına dönüştürebilmektedir.
+Ayrıca çıktı dosyaları kullanıcı tarafından istenilen dizine kaydedilebilmekte
+ve dönüşüm işlemi hem grafik arayüz (GUI) hem de terminal tabanlı arayüz (TUI)
+üzerinden gerçekleştirilebilmektedir.
+
+Markdown → Markdown dönüşümü, dosya içeriğinin standartlaştırılması ve
+biçimsel tutarlılığın sağlanması amacıyla kullanılmaktadır.
+
 
 ---
 
@@ -65,11 +59,11 @@ harici bir programlama dili veya framework kullanılmamıştır.
 
 ```text
 pandoc-ui
-├── run.sh        # Ana çalıştırma dosyası
-├── gui.sh        # YAD tabanlı grafik arayüz
-├── tui.sh        # Whiptail tabanlı terminal arayüzü
+├── src
+    ├── gui.sh        # YAD tabanlı grafik arayüz
+    ├── tui.sh        # Whiptail tabanlı terminal arayüzü
 ├── test.md       # Örnek girdi dosyası
-├── cikti.html    # Örnek çıktı dosyası
+├── run.sh        # Ana çalıştırma dosyası
     README.md     # Proje dokümantasyonu
     img folder    #Projeden alınan ekran görüntüleri(resimler)
 ```
@@ -83,7 +77,7 @@ VirtualBox üzerinde Pardus kurulumunu gerçekleştirebilir.
 - [VirtualBox Kurulumu](https://www.virtualbox.org/wiki/Downloads)
 - [Pardus ISO Dosyası](https://www.pardus.org.tr/indir/)
 
-## 🧩 Proje Kurulumu ve Çalıştırma (Terminal Üzerinden)
+## 🧩 Proje Kurulumu ve Çalıştırma
 
 Bu bölümde projeyi GitHub üzerinden indirip terminalden çalıştırma adımları gösterilmektedir.
 
@@ -96,7 +90,7 @@ git clone https://github.com/YunS16/Linux_Pandoc_ui.git
 ```
 cd Linux_Pandoc_ui
 ```
-### 3️⃣ Gerekli paketleri kurun (Debian / Pardus / Ubuntu)
+### 3️⃣ Gerekli paketleri kurun 
 
 Bu adımda projenin çalışabilmesi için gerekli olan tüm paketler sisteme kurulmaktadır.
 Pandoc belge dönüştürme işlemleri için, YAD ve Whiptail arayüzler için,
