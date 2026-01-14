@@ -2,8 +2,6 @@
   <h1>🐧 Linux Pandoc Dönüştürücü Projesi</h1>
 </div>
 
-<hr style="height:2px;">
-
 ## 📌 Proje Tanımı
 
 Bu proje, Pandoc’un sunduğu güçlü belge dönüştürme yeteneklerini  
