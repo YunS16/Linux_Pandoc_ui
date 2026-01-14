@@ -1,4 +1,3 @@
-# Linux-Pandocui
 
 <div align="center">
 
@@ -150,8 +149,8 @@ Böylece çıktı dosyası kullanıcı tarafından kolayca bulunabilir.
 ### İşlem Sonucu
 
 <div style="display:flex; gap:20px; justify-content:center; align-items:center;">
-  <img src="img/gui/basarili_cikti.png" width="45%">
-  <img src="img/gui/basarili_cikti_kanit.png" width="45%">
+  <img src="img/gui/basarili_cikti.png" width="48%">
+  <img src="img/gui/basarili_cikti_kanit.png" width="48%">
 </div>
 
 Dönüştürme işlemi başarıyla tamamlandığında kullanıcı bilgilendirilir.
@@ -178,8 +177,8 @@ Kullanıcı yön tuşlarıyla menüde rahatça gezinebilir.
 ### İşlem Sonucu
 
 <div style="display:flex; gap:20px; justify-content:center; align-items:center;">
-  <img src="img/tui/basarili_cikti1.png" width="45%">
-  <img src="img/tui/basarili_cikti2.png" width="45%">
+  <img src="img/tui/basarili_cikti1.png" width="48%">
+  <img src="img/tui/basarili_cikti2.png" width="48%">
 </div>
 
 İşlem başarıyla tamamlandığında terminal üzerinden bilgilendirme yapılır.
