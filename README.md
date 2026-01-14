@@ -1,6 +1,5 @@
-
 <div align="center">
-# 🐧 Linux Pandoc Dönüştürücü Projesi  
+  <h1>🐧 Linux Pandoc Dönüştürücü Projesi</h1>
 </div>
 
 ---
